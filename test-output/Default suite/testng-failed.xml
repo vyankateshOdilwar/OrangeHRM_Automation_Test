@@ -5,8 +5,8 @@
     <classes>
       <class name="com.web.orangehrm.homePage">
         <methods>
-          <include name="tearDown"/>
           <include name="profilecheck"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.web.orangehrm.homePage -->
     </classes>

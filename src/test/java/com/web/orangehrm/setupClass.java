@@ -5,7 +5,7 @@ import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterClass;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -19,19 +19,21 @@ public static WebDriver driver;
 			  WebDriverManager.chromedriver().setup();
 			  driver = new ChromeDriver();
 			  driver.get(URL);
-			  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		  } else if(browser.equalsIgnoreCase("edge")) {
 			  WebDriverManager.edgedriver().setup();
 			  driver = new EdgeDriver();
 			  driver.get(URL);
-			  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		  } else {
 			  System.out.println("Invalid Parameters!");
 		  }
 		  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	  }
 	  
-	  @AfterSuite
+	  public void myWait(int waitInSeconds) {
+		  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(waitInSeconds));
+	  }
+	  
+	  @AfterClass
 	  void tearDown() {
 		  driver.quit();
 	  }
