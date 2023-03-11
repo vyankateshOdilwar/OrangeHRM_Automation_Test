@@ -25,6 +25,8 @@ public static WebDriver driver;
 			  driver = new EdgeDriver();
 			  driver.get(URL);
 			  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		  } else {
+			  System.out.println("Invalid Parameters!");
 		  }
 		  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	  }

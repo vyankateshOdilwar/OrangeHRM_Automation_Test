@@ -1,31 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="4" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-11T11:37:28 IST" name="Suite" finished-at="2023-03-11T11:37:59 IST" duration-ms="31473">
+  <suite started-at="2023-03-11T13:07:50 IST" name="Default suite" finished-at="2023-03-11T13:08:24 IST" duration-ms="33886">
     <groups>
     </groups>
-    <test started-at="2023-03-11T11:37:28 IST" name="Test1" finished-at="2023-03-11T11:37:59 IST" duration-ms="31473">
-      <class name="com.web.orangehrm.homePage">
-        <test-method signature="profilecheck()[pri:0, instance:com.web.orangehrm.homePage@368f2016]" started-at="2023-03-11T11:37:57 IST" name="profilecheck" finished-at="2023-03-11T11:37:59 IST" duration-ms="2145" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- profilecheck -->
-      </class> <!-- com.web.orangehrm.homePage -->
+    <test started-at="2023-03-11T13:07:50 IST" name="Default test" finished-at="2023-03-11T13:08:24 IST" duration-ms="33886">
       <class name="com.web.orangehrm.loginPage">
-        <test-method signature="initElements()[pri:1, instance:com.web.orangehrm.loginPage@34a3d150]" started-at="2023-03-11T11:37:28 IST" name="initElements" finished-at="2023-03-11T11:37:51 IST" duration-ms="22882" status="PASS">
+        <test-method signature="initElements()[pri:1, instance:com.web.orangehrm.loginPage@5c6648b0]" started-at="2023-03-11T13:07:50 IST" name="initElements" finished-at="2023-03-11T13:08:20 IST" duration-ms="30467" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initElements -->
-        <test-method signature="loginTest()[pri:2, instance:com.web.orangehrm.loginPage@34a3d150]" started-at="2023-03-11T11:37:51 IST" name="loginTest" finished-at="2023-03-11T11:37:57 IST" duration-ms="6406" status="PASS">
+        <test-method signature="loginTest()[pri:2, instance:com.web.orangehrm.loginPage@5c6648b0]" started-at="2023-03-11T13:08:20 IST" name="loginTest" finished-at="2023-03-11T13:08:24 IST" duration-ms="3352" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.web.orangehrm.loginPage@34a3d150]" started-at="2023-03-11T11:37:59 IST" name="tearDown" finished-at="2023-03-11T11:37:59 IST" duration-ms="130" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.web.orangehrm.loginPage@5c6648b0]" started-at="2023-03-11T13:08:24 IST" name="tearDown" finished-at="2023-03-11T13:08:24 IST" duration-ms="130" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.web.orangehrm.loginPage -->
-    </test> <!-- Test1 -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
