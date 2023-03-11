@@ -19,14 +19,14 @@ public static WebDriver driver;
 			  WebDriverManager.chromedriver().setup();
 			  driver = new ChromeDriver();
 			  driver.get(URL);
-			  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10000));
+			  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		  } else if(browser.equalsIgnoreCase("edge")) {
 			  WebDriverManager.edgedriver().setup();
 			  driver = new EdgeDriver();
 			  driver.get(URL);
-			  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10000));
+			  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		  }
-		  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10000));
+		  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	  }
 	  
 	  @AfterSuite

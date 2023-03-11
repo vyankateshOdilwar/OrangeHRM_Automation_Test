@@ -1,0 +1,5 @@
+com\web\orangehrm\loginPage.class
+com\web\orangehrm\setupClass.class
+com\web\pom_orangehrm\loginPage.class
+com\web\orangehrm\homePage.class
+com\web\pom_orangehrm\homePage.class
