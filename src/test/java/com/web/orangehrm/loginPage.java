@@ -34,13 +34,15 @@ public class loginPage extends setupClass {
 			System.out.println("Identity matched...");
 			System.out.println(username +" || "+password+ " credentials are valid.");
 			Thread.sleep(2000);
-			driver.navigate().to(resource.getString("URL"));
+			driver.navigate().back();
 			Thread.sleep(2000);
+			
 		}else {
 			System.out.println("Identity mismatched...");
 			System.out.println(username +" || "+password+ " credentials are invalid ");
 			driver.navigate().refresh();
 		}
+		  driver.manage().deleteAllCookies();
 	}
 	
 	@DataProvider(name="testData")
