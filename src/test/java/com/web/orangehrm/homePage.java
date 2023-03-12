@@ -13,7 +13,7 @@ public class homePage extends setupClass{
 	com.web.pom_orangehrm.loginPage loginRef;
 	
 	@Test
-	void profilecheck() {
+	void profilecheck() throws InterruptedException {
 		resource = ResourceBundle.getBundle("config");
 		setup("chrome",resource.getString("URL"));
 		loginRef = new com.web.pom_orangehrm.loginPage(driver);
@@ -22,11 +22,8 @@ public class homePage extends setupClass{
 		loginRef.button.click();
 		ref = new com.web.pom_orangehrm.homePage(driver);
 		myWait(10);
-		ref.profileMenu.click();
-		ref.about.click();
-		for (Object details:ref.companyDetails) {
-			System.out.println(((WebElement) details).getText());
-		}
+		ref.myInfoSection.click();
+		Thread.sleep(3000);
 				
 	}
 	

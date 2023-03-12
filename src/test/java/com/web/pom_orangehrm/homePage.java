@@ -22,6 +22,9 @@ public class homePage {
 	@FindBy(xpath = "//img[@alt='client brand banner']")
 	public WebElement homepageLogo;
 	
+	@FindBy (linkText = "My Info")
+	public WebElement myInfoSection;
+	
 	public homePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		System.out.println("homePage elements loaded...");
