@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.web.orangehrm.loginPage">
+      <class name="com.web.orangehrm.myInfoEdit">
         <methods>
-          <include name="loginTest" invocation-numbers="1 2 3"/>
+          <include name="editMyInfoDetails"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.web.orangehrm.loginPage -->
+      </class> <!-- com.web.orangehrm.myInfoEdit -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

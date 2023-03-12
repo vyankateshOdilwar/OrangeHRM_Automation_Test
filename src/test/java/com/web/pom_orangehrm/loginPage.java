@@ -18,7 +18,7 @@ public class loginPage {
 	
 	public loginPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
-		System.out.println("necessary elements loaded...");
+		System.out.println("loginPage elements loaded...");
 	}
 
 
