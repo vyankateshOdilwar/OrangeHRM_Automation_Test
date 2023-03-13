@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="tests" name="Test2(failed)">
-    <classes>
-      <class name="com.web.orangehrm.homePage">
-        <methods>
-          <include name="tearDown"/>
-          <include name="profilecheck"/>
-        </methods>
-      </class> <!-- com.web.orangehrm.homePage -->
-    </classes>
-  </test> <!-- Test2(failed) -->
-  <test thread-count="5" parallel="tests" name="Test1(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="com.web.orangehrm.loginPage">
         <methods>
-          <include name="loginTest" invocation-numbers="0 1 2 3"/>
+          <include name="loginTest" invocation-numbers="1 2 3"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.web.orangehrm.loginPage -->
+      <class name="com.web.orangehrm.myInfoRestrictedFields">
+        <methods>
+          <include name="fieldRestrictionValidation"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.web.orangehrm.myInfoRestrictedFields -->
     </classes>
-  </test> <!-- Test1(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

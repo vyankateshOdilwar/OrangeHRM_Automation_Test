@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.web.orangehrm.myInfoEdit">
+      <class name="com.web.pom_orangehrm.myInfoRestrictedFields">
         <methods>
-          <include name="editMyInfoDetails"/>
-          <include name="tearDown"/>
+          <include name="fieldRestrictionValidation"/>
         </methods>
-      </class> <!-- com.web.orangehrm.myInfoEdit -->
+      </class> <!-- com.web.pom_orangehrm.myInfoRestrictedFields -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
